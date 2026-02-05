@@ -1,0 +1,22 @@
+INSTRUCCIONES CRÍTICAS PARA GITHUB PAGES - VERSIÓN V12.1
+
+El error 404 ocurre porque los archivos están dentro de una carpeta en lugar de en la raíz del repositorio.
+
+PASOS PARA SOLUCIONARLO:
+
+1.  Descomprime el archivo "naza_portfolio_deploy_v12.1.zip".
+2.  Verás una carpeta llena de archivos (index.html, assets, images, etc.).
+3.  Ve a tu repositorio en GitHub.com.
+4.  Si ya tienes archivos subidos, BÓRRALOS TODOS (o muévelos a una carpeta "backup").
+5.  Arrastra TODOS los archivos que descomprimiste (index.html, assets, .nojekyll, etc.) y suéltalos DIRECTAMENTE en la página principal de tu repositorio.
+    *   IMPORTANTE: No subas la carpeta "naza_portfolio_deploy_v12.1", sube SU CONTENIDO.
+    *   Debe quedar así:
+        - TuRepositorio/index.html
+        - TuRepositorio/assets/
+        - TuRepositorio/images/
+        - TuRepositorio/.nojekyll
+6.  Haz clic en "Commit changes".
+7.  Espera 1 o 2 minutos y recarga tu página web. ¡Debería funcionar!
+
+NOTA TÉCNICA:
+He incluido un archivo oculto llamado ".nojekyll" que es vital para que GitHub no bloquee los estilos y scripts. Asegúrate de que se suba también.
